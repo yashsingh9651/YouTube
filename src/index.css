@@ -1,3 +1,10 @@
+.custom-a{
+  border: 1px solid gray !important;
+}
+::-webkit-scrollbar{width: 0px;}
+.custom-b{
+  border-top: 1px solid gray !important;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +12,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  box-sizing: border-box !important;
+};
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
